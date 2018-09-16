@@ -4,12 +4,9 @@ Or a candle. Perhaps that's more fitting.....
 
 ---
 
-# Creating a @color[orange](basic) .NET core web api  
+## Creating a @color[orange](basic) .NET core web api  
 
 #### Prereqs
-Is the any difference 
-- In line height 
-
 - VS Code
 - `.NET core` SDK
 
@@ -203,7 +200,8 @@ It's a pain to make changes, stop the app, then rerun `dotnet run`. Stop the app
 #### Adding Javascript 
 1. Create a `js` folder in `wwwroot`
 2. Create an `index.js` file and paste in the following code:
-```
+
+```javascript
 let count = 0;
 
 function callController() {
@@ -234,9 +232,9 @@ function callController() {
 
 ---
 
-3. In the `index.html` file, add in a a target div for the js to attach to: `<div id="root"></div>`
-4. Add a button to call the js function: `<button type="button" onclick="callController();">Click to get values</button>`
-5. Add the script to the page: `<script src="./js/index.js"></script>`
+1. In the `index.html` file, add in a a target div for the js to attach to: `<div id="root"></div>`
+2. Add a button to call the js function: `<button type="button" onclick="callController();">Click to get values</button>`
+3. Add the script to the page: `<script src="./js/index.js"></script>`
 
 
 
