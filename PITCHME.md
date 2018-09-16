@@ -45,6 +45,9 @@ namespace <insert application name>
     }
 }
 ```
+
++++ 
+
 1. If there are red lines indicating errors, ignore them for now; we'll come back to these
 2. Add the following code into the `Program.cs` file (you can leave the initial `Hello World` there if you'd like:
 ```
