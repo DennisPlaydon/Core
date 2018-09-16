@@ -4,7 +4,7 @@ Or a candle. Perhaps that's more fitting.....
 
 ---
 
-# Creating a basic .NET core web api  
+# Creating a @color[orange](ACME Corp Clearance Sale) basic .NET core web api  
 
 #### Prereqs
 
@@ -78,13 +78,14 @@ namespace <insert application name>
 ---
 
 #### Add the package needed to make the new code build & run 
-1. Add the required package to the project by running `dotnet add package Microsoft.AspNetCore.App`. This will add 
+1. Run `dotnet add package Microsoft.AspNetCore.App`. This will add 
 ```
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.4" />
   </ItemGroup>
 ```
-to the `.csproj` file. A pop up will warn of unresolved dependaicnes. Click `yes` to install the required dependancies. (Previously `Microsoft.AspNetCore.All` was used; this is larger than necessary.)
+to the `.csproj` file. A pop up will warn of unresolved dependaicnes. Click `yes` to install the required dependancies
+N.B Previously `Microsoft.AspNetCore.All` was used; this is larger than necessary.
 
 ---
 
@@ -104,6 +105,7 @@ Sometimes Omnisharp can want a `'sln` file before it will start providing intell
 
 #### Create a web api 
 1. Add the following snippet to `Startup.cs`:
+
 ```
 public void ConfigureServices(IServiceCollection services){
     services.AddMvc();
@@ -130,7 +132,8 @@ public void Configure(IApplicationBuilder app)
 ---
 
 5. In the `Controllers` folder create a `ValuesController.cs` file and insert the following snippet:
-```
+
+```javascript
 namespace <application name>.Controllers
 {
     [Route("api/[controller]")]
@@ -148,9 +151,9 @@ namespace <application name>.Controllers
 
 ---
 
-6. Add in the necessary `using` statements as required 
-7. Run `dotnet run`
-8. Navigate to `localhost:5000/api/values` and you should see `Hello from the controller`
+1. Add in the necessary `using` statements as required 
+2. Run `dotnet run`
+3. Navigate to `localhost:5000/api/values` and you should see `Hello from the controller`
 
 ---
 
