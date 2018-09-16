@@ -7,8 +7,9 @@ Or a candle. Perhaps that's more fitting.....
 # Creating a basic .NET core web api  
 
 #### Prereqs
-1. VS Code
-2. `.NET core` SDK
+
+- VS Code
+- `.NET core` SDK
 
 ---
 
@@ -20,8 +21,8 @@ Or a candle. Perhaps that's more fitting.....
 --- 
 
 #### Turn the console project into a web api 
-- Create a `Startup.cs` file next to `Program.cs`
-- Add the following code snippet:
+1. Create a `Startup.cs` file next to `Program.cs`
+2. Add the following code snippet:
 ```
 namespace <insert application name>
 {
@@ -44,8 +45,8 @@ namespace <insert application name>
     }
 }
 ```
-3. If there are red lines indicating errors, ignore them for now; we'll come back to these
-4. Add the following code into the `Program.cs` file (you can leave the initial `Hello World` there if you'd like:
+1. If there are red lines indicating errors, ignore them for now; we'll come back to these
+2. Add the following code into the `Program.cs` file (you can leave the initial `Hello World` there if you'd like:
 ```
 namespace <insert application name>
 {
