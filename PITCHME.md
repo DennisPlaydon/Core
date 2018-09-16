@@ -4,11 +4,11 @@ Or a candle. Perhaps that's more fitting.....
 
 ---
 
-# Creating a @color[orange](ACME Corp Clearance Sale) basic .NET core web api  
+# Creating a @color[orange](basic) .NET core web api  
 
 #### Prereqs
 
-- VS Code
+- @size[3.5em](VS) Code
 - `.NET core` SDK
 
 ---
