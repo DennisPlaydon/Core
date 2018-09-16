@@ -17,9 +17,11 @@ Or a candle. Perhaps that's more fitting.....
 2. Create a new console project called `Meshd` with `dotnet new console -n Meshd`
 3. `cd` into the `Meshd` directory (to where the `.csproj` file is) and run `dotnet run`
 
+--- 
+
 #### Turn the console project into a web api 
-1. Create a `Startup.cs` file next to `Program.cs`
-2. Add the following code snippet:
+- Create a `Startup.cs` file next to `Program.cs`
+- Add the following code snippet:
 ```
 namespace <insert application name>
 {
