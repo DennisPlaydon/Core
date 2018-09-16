@@ -46,7 +46,7 @@ namespace <insert application name>
 }
 ```
 
-+++ 
+--- 
 
 3. If there are red lines indicating errors, ignore them for now; we'll come back to these
 4. Add the following code into the `Program.cs` file (you can leave the initial `Hello World` there if you'd like:
@@ -75,7 +75,7 @@ namespace <insert application name>
 1. Install `C# by OmniSharp`
 2. Restart VS Code if necessary 
 
-+++
+---
 
 #### Add the package needed to make the new code build & run 
 1. Add the required package to the project by running `dotnet add package Microsoft.AspNetCore.App`. This will add 
@@ -86,7 +86,8 @@ namespace <insert application name>
 ```
 to the `.csproj` file. A pop up will warn of unresolved dependaicnes. Click `yes` to install the required dependancies. (Previously `Microsoft.AspNetCore.All` was used; this is larger than necessary.)
 
-+++
+---
+
 2. Now when you resolve the build errors in `Startup.cs` and `Program.cs` (by clicking on the lightbulbs on the lines that have red underlining) you'll be able to add the `using` statements that you need 
 3. Run the project with `dotnet run`. Congratuations, you now have an api. Head to `localhost:5000` and make sure you see `Hello World!`.
 
@@ -120,13 +121,13 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-+++
+---
 
 2. `app.UseMvc()` tells your app to add MVC to the request execution pipeline
 3. Add `<Project Sdk="Microsoft.NET.Sdk.Web">` to the top of the `.csproj` file (the origional entry will be `<Project Sdk="Microsoft.NET.Sdk">`). This will ensure that the controllers are registered.
 4. Create a `Controllers` folder
 
-+++
+---
 
 5. In the `Controllers` folder create a `ValuesController.cs` file and insert the following snippet:
 ```
@@ -145,7 +146,7 @@ namespace <application name>.Controllers
 }
 ```
 
-+++
+---
 
 6. Add in the necessary `using` statements as required 
 7. Run `dotnet run`
@@ -169,7 +170,7 @@ namespace <application name>.Controllers
 </html>
 ```
 
-+++
+---
 
 3. Add the following snippet to `Startup.cs` to tell the app to serve static files:
 ```
@@ -191,6 +192,8 @@ app.Run(async (context) =>
 
 #### Watching files for changes 
 It's a pain to make changes, stop the app, then rerun `dotnet run`. Stop the app and run `dotnet watch run`. Head to `Program.cs` and remove `Console.WriteLine("Hello World!");`. The app should rebuild and rerun. 
+
+---
 
 #### Adding Javascript 
 1. Create a `js` folder in `wwwroot`
@@ -223,6 +226,9 @@ function callController() {
     }
 }
 ```
+
+---
+
 3. In the `index.html` file, add in a a target div for the js to attach to: `<div id="root"></div>`
 4. Add a button to call the js function: `<button type="button" onclick="callController();">Click to get values</button>`
 5. Add the script to the page: `<script src="./js/index.js"></script>`
