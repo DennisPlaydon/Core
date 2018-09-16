@@ -7,8 +7,10 @@ Or a candle. Perhaps that's more fitting.....
 # Creating a @color[orange](basic) .NET core web api  
 
 #### Prereqs
+Is the any difference 
+- In line height 
 
-- @size[3.5em](VS) Code
+- VS Code
 - `.NET core` SDK
 
 ---
