@@ -18,7 +18,13 @@ function callController() {
                 const container = document.createElement('div');
                 root.appendChild(container);
                 const p = document.createElement('p');
-                p.textContent = `${data} called ${count} times`
+                if (count % 2 === 0) {
+                    p.textContent = `${data} has been clicked ${count} times`
+                }
+                else {
+                    p.textContent = `Odd click number (${count})`
+                    oddNumber;
+                }
                 container.appendChild(p);
             }
         }
@@ -29,4 +35,15 @@ function reset() {
     count = 0;
     root.innerHTML = "";
     document.getElementById('customText').value = "";
+}
+
+function customCount() {
+    let x = document.getElementById('customText').value;
+    if(!isNaN(x)) {
+        count = x;
+    }
+}
+
+function oddNumber() {
+    const container = document.createElement('div');
 }
