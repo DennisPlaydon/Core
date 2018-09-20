@@ -25,3 +25,8 @@ function callController() {
     }
 }
 
+function reset() {
+    count = 0;
+    root.innerHTML = "";
+    document.getElementById('customText').value = "";
+}
