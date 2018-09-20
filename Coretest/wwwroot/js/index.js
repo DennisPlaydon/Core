@@ -23,7 +23,6 @@ function callController() {
                 }
                 else {
                     p.textContent = `Odd click number (${count})`
-                    oddNumber;
                 }
                 container.appendChild(p);
             }
@@ -42,8 +41,4 @@ function customCount() {
     if(!isNaN(x)) {
         count = x;
     }
-}
-
-function oddNumber() {
-    const container = document.createElement('div');
 }
