@@ -10,7 +10,7 @@ namespace Coretest.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Hello from the controller";
+            return "Awesome .NET project";
         }
     }
 }
